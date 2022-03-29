@@ -1,10 +1,26 @@
 
 var soundsConfiguration = [
     {
-        "file" : "../sounds/demo.mp3",
-        "label" : "Demo Sound",
+        "file" : "sounds/demo.mp3",
+        "label" : "Demo Sound WA",
+        "initialVolume" : 0.5
+    },
+    {
+        "file" : "sounds/Kit01_FullMix(125BPM).mp3",
+        "label" : "Demo Sound 1",
+        "initialVolume" : 0.5
+    },
+    {
+        "file" : "sounds/Kit05_FullMix(130BPM).mp3",
+        "label" : "Demo Sound 5",
+        "initialVolume" : 0.5
+    },
+    {
+        "file" : "sounds/Kit09_FullMix(120BPM).mp3",
+        "label" : "Demo Sound 9",
         "initialVolume" : 0.5
     }
+    
 ];
 
 
@@ -61,11 +77,12 @@ var soundControllerModel = function(soundConfig) {
 
     self.setupHowler = function() {
         console.log("setting up howler for " + self.label())
+        console.log("init vol is " + self.volume())
         var sound = new Howl({
-            src: ['sounds/demo.mp3'],
+            src: [self.file()],
             //autoplay: true,
             loop: true,
-            volume: self.volume,
+            volume: self.volume(),
             onload : function() {
                 console.log("onload called")
                 self.howlerObject.play();
