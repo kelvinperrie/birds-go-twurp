@@ -9,3 +9,19 @@ h1, h2, h3 {
         font-family: 'Open Sans', sans-serif;
         background-color: #FAE8E0;
       }
+
+.sound-container {
+  padding: 1.2em;
+  margin: 1em;
+  background-color: #fff;
+  display: inline-block;
+  /* border: 4px solid #767676; */
+  border-radius: 20px;
+  font-size: 1.1em;
+  width: 200px;
+  text-align: center;
+}
+
+.sound-active {
+  background-color:#dcf9dc;
+}

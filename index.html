@@ -13,12 +13,12 @@
   </head>
   <body>
     <div class="container">
-          asdfasdfasdf.
-          <!-- ko foreach: soundControllers -->
+        <!-- ko foreach: soundControllers -->
+        <div class="" data-bind="click: toggleActive, class: containerClasses">
           <div data-bind="text: label"></div>
-          active: <span data-bind="text: active">???</span><br/>
-          <div data-bind="click: toggleActive">toggle active</div>
-          <!-- /ko -->
+          <!-- active: <span data-bind="text: active">???</span><br/> -->
+        </div>
+        <!-- /ko -->
     </div>
     <script src="scripts/jquery-3.3.1.min.js"></script>
     <script src="scripts/knockout-3.5.1.js"></script>

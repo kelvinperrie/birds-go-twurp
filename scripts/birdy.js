@@ -1,23 +1,23 @@
 
 var soundsConfiguration = [
     {
-        "file" : "sounds/demo.mp3",
-        "label" : "Demo Sound WA",
+        "file" : "sounds/Black Cicada - Dave Holland.mp3",
+        "label" : "Black Cicada",
         "initialVolume" : 0.5
     },
     {
-        "file" : "sounds/Kit01_FullMix(125BPM).mp3",
-        "label" : "Demo Sound 1",
+        "file" : "sounds/Grey Warbler - Dave Holland.mp3",
+        "label" : "Grey Warbler",
         "initialVolume" : 0.5
     },
     {
-        "file" : "sounds/Kit05_FullMix(130BPM).mp3",
-        "label" : "Demo Sound 5",
+        "file" : "sounds/Pukeko - Dave Holland.mp3",
+        "label" : "Pukeko",
         "initialVolume" : 0.5
     },
     {
-        "file" : "sounds/Kit09_FullMix(120BPM).mp3",
-        "label" : "Demo Sound 9",
+        "file" : "sounds/Tieke - Dave Holland.mp3",
+        "label" : "Tieke",
         "initialVolume" : 0.5
     }
     
@@ -52,6 +52,14 @@ var soundControllerModel = function(soundConfig) {
     self.file = ko.observable();
     self.volume = ko.observable();
     self.howlerObject = null;
+
+    self.containerClasses = ko.computed(function() {
+        var classes = "sound-container";
+        if(self.active()) {
+            classes += " sound-active";
+        }
+        return classes;
+    });
 
     self.toggleActive = function() {
         if(self.active()) {
