@@ -51,6 +51,7 @@ var soundControllerModel = function(soundConfig) {
     self.label = ko.observable();
     self.file = ko.observable();
     self.volume = ko.observable();
+    self.selectedVolume = ko.observable();
     self.howlerObject = null;
 
     self.containerClasses = ko.computed(function() {
@@ -60,6 +61,11 @@ var soundControllerModel = function(soundConfig) {
         }
         return classes;
     });
+
+    // subscribe to the user changing the volume so we can update the volume of the sound
+    self.selectedVolume.subscribe(function(newValue) {
+        self.howlerObject.volume(newValue/ 100);
+     });
 
     self.toggleActive = function() {
         if(self.active()) {

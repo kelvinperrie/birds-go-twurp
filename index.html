@@ -17,6 +17,7 @@
         <div class="" data-bind="click: toggleActive, class: containerClasses">
           <div data-bind="text: label"></div>
           <!-- active: <span data-bind="text: active">???</span><br/> -->
+          <input type="range" min="1" max="100" value="50" data-bind="click: function() {}, clickBubble: false, value: selectedVolume, valueUpdate: 'input'">
         </div>
         <!-- /ko -->
     </div>
