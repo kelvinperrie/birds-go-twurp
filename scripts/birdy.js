@@ -23,21 +23,82 @@ var soundsConfiguration = [
     
 ];
 
+var presetsConfiguration = [
+    {
+        "title" : "Songs One",
+        "sounds" : [
+            { "label" : "Tieke", "volume" : 0.8 },
+            { "label" : "Grey Warbler", "volume" : 0.3 },
+        ]
+    },
+    {
+        "title" : "Lonely Bird",
+        "sounds" : [
+            { "label" : "Grey Warbler", "volume" : 0.7 }
+        ]
+    },
+    {
+        "title" : "Everything",
+        "sounds" : [
+            { "label" : "Tieke", "volume" : 0.8 },
+            { "label" : "Grey Warbler", "volume" : 0.3 },
+            { "label" : "Pukeko", "volume" : 0.5 },
+            { "label" : "Black Cicada", "volume" : 0.7 }
+        ]
+    }
+];
 
-var pageModel = function(soundsConfiguration) {
+
+var pageModel = function(soundsConfiguration, presetsConfiguration) {
     var self = this;
 
     self.soundsConfiguration = soundsConfiguration;
+    self.presetsConfiguration = presetsConfiguration;
     self.soundControllers = ko.observableArray();
 
-    self.initialise = function(soundsConfiguration) {
-        for (var soundConfig of soundsConfiguration) {
+    self.loadSounds = function() {
+        self.soundControllers([]);
+        for (var soundConfig of self.soundsConfiguration) {
             console.log(soundConfig);
             var soundController = new soundControllerModel(soundConfig);
             self.soundControllers.push(soundController);
         }
+    }
+
+    self.resetSounds = function() {
+        // destroy all existing sounds
+        for (var soundController of self.soundControllers()) {
+            soundController.resetSound();
+            // if(soundController.howlerObject) {
+            //     soundController.howlerObject.unload();
+            // }
+        }
+        // reload all the sounds from the base config
+        //self.loadSounds();
+    }
+
+
+    self.loadPreset = function(preset) {
+        console.log(preset);
+        self.resetSounds();
+        for (var presetSound of preset.sounds) {
+            console.log("looking for presetSound " + presetSound.label)
+            for(var soundController of self.soundControllers()) {
+                console.log("checking " + soundController.label())
+                if(soundController.label() === presetSound.label) {
+                    console.log("found!")
+                    soundController.selectedVolume(presetSound.volume * 100)
+                    soundController.toggleActive();
+                    break;
+                }
+            }
+        }
     };
-    self.initialise(self.soundsConfiguration);
+
+    self.initialise = function() {
+        self.loadSounds();
+    };
+    self.initialise();
 };
 
 var soundControllerModel = function(soundConfig) {
@@ -52,6 +113,7 @@ var soundControllerModel = function(soundConfig) {
     self.file = ko.observable();
     self.volume = ko.observable();
     self.selectedVolume = ko.observable();
+    self.initialVolume = ko.observable();
     self.howlerObject = null;
 
     self.containerClasses = ko.computed(function() {
@@ -62,30 +124,36 @@ var soundControllerModel = function(soundConfig) {
         return classes;
     });
 
+    self.resetSound = function() {
+        self.stopSound();
+        self.selectedVolume(self.initialVolume * 100);
+    }
+
+    self.stopSound = function() {
+        // we're going to stop the sound, remembering where we stopped it
+        self.seekWhenStopped = self.howlerObject.seek();
+        console.log(self.seekWhenStopped);
+        self.howlerObject.stop();
+        self.active(false);
+    };
+
     // subscribe to the user changing the volume so we can update the volume of the sound
     self.selectedVolume.subscribe(function(newValue) {
         self.howlerObject.volume(newValue/ 100);
      });
 
     self.toggleActive = function() {
+        if(!self.ready()) {
+            console.log("can't do anything, sound ain't ready yet");
+            return;
+        }
+        console.log("guess we're ready")
         if(self.active()) {
-            // we're going to stop the sound, remembering where we stopped it
-            self.seekWhenStopped = self.howlerObject.seek();
-            console.log(self.seekWhenStopped);
-            self.howlerObject.stop();
-            self.active(false);
+            self.stopSound();
         } else {
-            // play the sound
-            // if the sound isn't setup, then do it now
-            if(!self.ready()) {
-                // when the sound is loaded it will automatically play
-                self.setupHowler();
-                self.ready(true);
-            } else {
-            // start the sound from where ever it was last stopped
-            // when a seek is completed it will automatically play
+            // play the sound, play if from where ever it was last stopped
+            // when a seek is completed play() will be called
             self.howlerObject.seek(self.seekWhenStopped);
-            }
         }
     }
 
@@ -94,13 +162,11 @@ var soundControllerModel = function(soundConfig) {
         console.log("init vol is " + self.volume())
         var sound = new Howl({
             src: [self.file()],
-            //autoplay: true,
             loop: true,
             volume: self.volume(),
             onload : function() {
                 console.log("onload called")
-                self.howlerObject.play();
-                self.active(true);
+                self.ready(true);
             },
             onstop : function() {
                 console.log('stopped!');
@@ -111,7 +177,6 @@ var soundControllerModel = function(soundConfig) {
                 self.active(true);
             }
         });
-        //sound.play();
         self.howlerObject = sound;
     }
 
@@ -119,10 +184,12 @@ var soundControllerModel = function(soundConfig) {
         self.label(soundConfig.label);
         self.file(soundConfig.file);
         self.volume(soundConfig.initialVolume);
+        self.initialVolume(soundConfig.initialVolume);
+        self.setupHowler();
     };
     self.initialise(self.soundConfig);
 };
 
-var page = new pageModel(soundsConfiguration);
+var page = new pageModel(soundsConfiguration, presetsConfiguration);
 
 ko.applyBindings(page);
