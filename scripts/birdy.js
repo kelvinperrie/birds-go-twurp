@@ -19,30 +19,55 @@ var soundsConfiguration = [
         "file" : "sounds/Tieke - Dave Holland.mp3",
         "label" : "Tieke",
         "initialVolume" : 0.5
+    },
+    {
+        "file" : "sounds/Blackbird - saracoutinho.wav",
+        "label" : "Blackbird",
+        "initialVolume" : 0.5
+    },
+    {
+        "file" : "sounds/Blackbirds - kate_mcalpine.m4a",
+        "label" : "Blackbirds",
+        "initialVolume" : 0.5
+    },
+    {
+        "file" : "sounds/Myna - Soggybottomnz.m4a",
+        "label" : "Myna",
+        "initialVolume" : 0.5
+    },
+    {
+        "file" : "sounds/Sparrows - duncanmc42.wav",
+        "label" : "Sparrows",
+        "initialVolume" : 0.5
+    },
+    {
+        "file" : "sounds/Sparrows - saracoutinho.wav",
+        "label" : "More Sparrows",
+        "initialVolume" : 0.5
     }
     
 ];
 
 var presetsConfiguration = [
     {
-        "title" : "Songs One",
+        "title" : "Suburban Backyard",
         "sounds" : [
-            { "label" : "Tieke", "volume" : 0.8 },
-            { "label" : "Grey Warbler", "volume" : 0.3 },
+            { "label" : "Blackbird", "volume" : 0.8 },
+            { "label" : "Myna", "volume" : 0.8 },
+            { "label" : "Sparrows", "volume" : 0.5 }
         ]
     },
     {
-        "title" : "Lonely Bird",
+        "title" : "Farm",
         "sounds" : [
-            { "label" : "Grey Warbler", "volume" : 0.7 }
+            { "label" : "Pukeko", "volume" : 0.8 }
         ]
     },
     {
-        "title" : "Everything",
+        "title" : "Bush",
         "sounds" : [
             { "label" : "Tieke", "volume" : 0.8 },
             { "label" : "Grey Warbler", "volume" : 0.3 },
-            { "label" : "Pukeko", "volume" : 0.5 },
             { "label" : "Black Cicada", "volume" : 0.7 }
         ]
     }
