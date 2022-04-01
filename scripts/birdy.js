@@ -226,7 +226,7 @@ var soundControllerModel = function(soundConfig) {
 
     self.resetSound = function() {
         self.stopSound();
-        self.selectedVolume(self.initialVolume * 100);
+        self.selectedVolume(self.initialVolume() * 100);
     }
 
     self.stopSound = function() {
