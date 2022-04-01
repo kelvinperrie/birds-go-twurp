@@ -1,11 +1,6 @@
 
 var soundsConfiguration = [
     {
-        "file" : "sounds/Black Cicada - Dave Holland.mp3",
-        "label" : "Black Cicada",
-        "initialVolume" : 0.5
-    },
-    {
         "file" : "sounds/Grey Warbler - Dave Holland.mp3",
         "label" : "Grey Warbler",
         "initialVolume" : 0.5
@@ -44,6 +39,40 @@ var soundsConfiguration = [
         "file" : "sounds/Sparrows - saracoutinho.wav",
         "label" : "More Sparrows",
         "initialVolume" : 0.5
+    },
+    {
+        "file" : "sounds/Chaffinch - malletrj.m4a",
+        "label" : "Chaffinch",
+        "initialVolume" : 0.5
+    },
+    {
+        "file" : "sounds/Magpie - andrewmaungakotukutuku.mp3",
+        "label" : "Magpie",
+        "initialVolume" : 0.5
+    },
+    {
+        "file" : "sounds/Black Cicada - Dave Holland.mp3",
+        "label" : "Black Cicada",
+        "initialVolume" : 0.5,
+        "category" : "Ambient"
+    },
+    {
+        "file" : "sounds/zapsplat_nature_rainfall_light_on_tent.mp3",
+        "label" : "Rain on tent",
+        "initialVolume" : 0.3,
+        "category" : "Ambient"
+    },
+    {
+        "file" : "sounds/zapsplat_nature_wind_strong_gusts_blowing_through_trees_and_bushes.mp3",
+        "label" : "Wind in trees",
+        "initialVolume" : 0.2,
+        "category" : "Ambient"
+    },
+    {
+        "file" : "sounds/zapsplat_Rain_Light_Thunder_Peel_LOOP.mp3",
+        "label" : "Rain and thunder",
+        "initialVolume" : 0.2,
+        "category" : "Ambient"
     }
     
 ];
@@ -60,7 +89,9 @@ var presetsConfiguration = [
     {
         "title" : "Farm",
         "sounds" : [
-            { "label" : "Pukeko", "volume" : 0.8 }
+            { "label" : "Pukeko", "volume" : 0.8 },
+            { "label" : "Chaffinch", "volume" : 0.8 },
+            { "label" : "Magpie", "volume" : 0.8 }
         ]
     },
     {
@@ -83,10 +114,15 @@ var pageModel = function(soundsConfiguration, presetsConfiguration) {
 
     self.loadSounds = function() {
         self.soundControllers([]);
+        var lastCategory = null;
         for (var soundConfig of self.soundsConfiguration) {
             console.log(soundConfig);
             var soundController = new soundControllerModel(soundConfig);
+            if(lastCategory !== soundController.category()) {
+                soundController.showCategory(true);
+            }
             self.soundControllers.push(soundController);
+            lastCategory = soundController.category();
         }
     }
 
@@ -134,6 +170,8 @@ var soundControllerModel = function(soundConfig) {
     self.active = ko.observable(false);
     self.seekWhenStopped = 0;
 
+    self.category = ko.observable();
+    self.showCategory = ko.observable(false);
     self.label = ko.observable();
     self.file = ko.observable();
     self.volume = ko.observable();
@@ -164,7 +202,9 @@ var soundControllerModel = function(soundConfig) {
 
     // subscribe to the user changing the volume so we can update the volume of the sound
     self.selectedVolume.subscribe(function(newValue) {
-        self.howlerObject.volume(newValue/ 100);
+        if(self.howlerObject) {
+            self.howlerObject.volume(newValue/ 100);
+        }
      });
 
     self.toggleActive = function() {
@@ -210,6 +250,8 @@ var soundControllerModel = function(soundConfig) {
         self.file(soundConfig.file);
         self.volume(soundConfig.initialVolume);
         self.initialVolume(soundConfig.initialVolume);
+        self.selectedVolume(soundConfig.initialVolume * 100)
+        self.category(soundConfig.category ?? "Birds")
         self.setupHowler();
     };
     self.initialise(self.soundConfig);

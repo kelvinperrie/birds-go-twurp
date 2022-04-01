@@ -13,33 +13,37 @@
   </head>
   <body>
     <div class="container">
-        <!-- ko foreach: soundControllers -->
-        <div class="" data-bind="click: toggleActive, class: containerClasses">
-          <div data-bind="text: label"></div>
-          <!-- active: <span data-bind="text: active">???</span><br/> -->
-          <input type="range" min="1" max="100" value="50" data-bind="click: function() {}, clickBubble: false, value: selectedVolume, valueUpdate: 'input'">
-        </div>
+      <header>
+        
+      </header>
+      <!-- ko foreach: soundControllers -->
+      <h3 data-bind="text: category, visible: showCategory">????</h3>
+      <div class="" data-bind="click: toggleActive, class: containerClasses">
+        <div data-bind="text: label"></div>
+        <!-- active: <span data-bind="text: active">???</span><br/> -->
+        <input type="range" min="1" max="100" value="50" data-bind="click: function() {}, clickBubble: false, value: selectedVolume, valueUpdate: 'input'">
+      </div>
+      <!-- /ko -->
+      <div class="actions-container">
+        <h3>Actions</h3>
+        <button type="button" class="btn btn-outline-primary" data-bind="click: resetSounds">Reset all sounds</button>
+        <h3>Presets</h3>
+        <!-- ko foreach: presetsConfiguration -->
+        <button type="button" class="btn btn-outline-primary" data-bind="click: function() { $parent.loadPreset($data); }, text: title"></button>
         <!-- /ko -->
-        <div class="actions-container">
-          <h3>Actions</h3>
-          <button type="button" class="btn btn-outline-primary" data-bind="click: resetSounds">Reset all sounds</button>
-          <h3>Presets</h3>
-          <!-- ko foreach: presetsConfiguration -->
-          <button type="button" class="btn btn-outline-primary" data-bind="click: function() { $parent.loadPreset($data); }, text: title"></button>
-          <!-- /ko -->
-        </div>
-        <div>
-          To do:
-          <ul>
-            <li>Some way of storing and display sound attributions</li>
-            <li>Setup continous deployment pipeline</li>
-            <li>Collect a bazzilion sounds; birds but also back ground e.g. wind, waves</li>
-            <li>Edit sounds? remove wind, dog barks, clicking etc</li>
-            <li>Make distinction between atmospheric sounds(?) and birds</li>
-            <li>Setup/config presets for various environments</li>
-            <li>Put the actions and presets panels somewhere more useful</li>
-          </ul>
-        </div>
+      </div>
+      <div>
+        To do:
+        <ul>
+          <li>Some way of storing and display sound attributions</li>
+          <li>Setup continous deployment pipeline</li>
+          <li>Collect a bazzilion sounds; birds but also back ground e.g. wind, waves</li>
+          <li>Edit sounds? remove wind, dog barks, clicking etc</li>
+          <li>Make distinction between atmospheric sounds(?) and birds</li>
+          <li>Setup/config presets for various environments</li>
+          <li>Put the actions and presets panels somewhere more useful</li>
+        </ul>
+      </div>
     </div>
     <script src="scripts/jquery-3.3.1.min.js"></script>
     <script src="scripts/knockout-3.5.1.js"></script>
