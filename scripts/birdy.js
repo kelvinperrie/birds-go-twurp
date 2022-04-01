@@ -3,7 +3,12 @@ var soundsConfiguration = [
     {
         "file" : "sounds/Grey Warbler - Dave Holland.mp3",
         "label" : "Grey Warbler",
-        "initialVolume" : 0.5
+        "initialVolume" : 0.5,
+        "attribution" : {
+            "name" : "dave_holland",
+            "link" : "aaaa",
+            "licenseUrl" : "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
     },
     {
         "file" : "sounds/Pukeko - Dave Holland.mp3",
@@ -28,7 +33,12 @@ var soundsConfiguration = [
     {
         "file" : "sounds/Myna - Soggybottomnz.m4a",
         "label" : "Myna",
-        "initialVolume" : 0.5
+        "initialVolume" : 0.5,
+        "attribution" : {
+            "name" : "Soggybottomnz",
+            "link" : "aaaa",
+            "licenseUrl" : "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
     },
     {
         "file" : "sounds/Sparrows - duncanmc42.wav",
@@ -60,19 +70,34 @@ var soundsConfiguration = [
         "file" : "sounds/zapsplat_nature_rainfall_light_on_tent.mp3",
         "label" : "Rain on tent",
         "initialVolume" : 0.3,
-        "category" : "Ambient"
+        "category" : "Ambient",
+        "attribution" : {
+            "name" : "zapsplat.com",
+            "link" : "https://www.zapsplat.com/",
+            "licenseUrl" : "https://www.zapsplat.com/license-type/standard-license/"
+        }
     },
     {
         "file" : "sounds/zapsplat_nature_wind_strong_gusts_blowing_through_trees_and_bushes.mp3",
         "label" : "Wind in trees",
         "initialVolume" : 0.2,
-        "category" : "Ambient"
+        "category" : "Ambient",
+        "attribution" : {
+            "name" : "zapsplat.com",
+            "link" : "https://www.zapsplat.com/",
+            "licenseUrl" : "https://www.zapsplat.com/license-type/standard-license/"
+        }
     },
     {
         "file" : "sounds/zapsplat_Rain_Light_Thunder_Peel_LOOP.mp3",
         "label" : "Rain and thunder",
         "initialVolume" : 0.2,
-        "category" : "Ambient"
+        "category" : "Ambient",
+        "attribution" : {
+            "name" : "zapsplat.com",
+            "link" : "https://www.zapsplat.com/",
+            "licenseUrl" : "https://www.zapsplat.com/license-type/standard-license/"
+        }
     }
     
 ];
@@ -178,6 +203,7 @@ var soundControllerModel = function(soundConfig) {
     self.selectedVolume = ko.observable();
     self.initialVolume = ko.observable();
     self.howlerObject = null;
+    self.attribution = ko.observable();
 
     self.containerClasses = ko.computed(function() {
         var classes = "sound-container";
@@ -252,6 +278,7 @@ var soundControllerModel = function(soundConfig) {
         self.initialVolume(soundConfig.initialVolume);
         self.selectedVolume(soundConfig.initialVolume * 100)
         self.category(soundConfig.category ?? "Birds")
+        self.attribution(soundConfig.attribution);
         self.setupHowler();
     };
     self.initialise(self.soundConfig);

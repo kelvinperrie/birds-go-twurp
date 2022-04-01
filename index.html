@@ -14,7 +14,7 @@
   <body>
     <div class="container">
       <header>
-        
+
       </header>
       <!-- ko foreach: soundControllers -->
       <h3 data-bind="text: category, visible: showCategory">????</h3>
@@ -43,6 +43,17 @@
           <li>Setup/config presets for various environments</li>
           <li>Put the actions and presets panels somewhere more useful</li>
         </ul>
+      </div>
+      <div>
+        <h3>Attributions</h3>
+        All sounds may have been modified to change volume levels, remove unwanted noises, and trim to the wanted lengths.
+        <!-- ko foreach: soundControllers -->
+        <!-- ko with: attribution -->
+        <div class="attribution">
+          <a href="" data-bind="attr : { href : link }, text: $parent.label">???</a> © <span data-bind="text: name">???</span> · <a href="" data-bind="attr : { href : licenseUrl }">some rights reserved</a>
+        </div>
+        <!-- /ko -->
+        <!-- /ko -->
       </div>
     </div>
     <script src="scripts/jquery-3.3.1.min.js"></script>
