@@ -98,6 +98,17 @@ var soundsConfiguration = [
             "link" : "https://www.zapsplat.com/",
             "licenseUrl" : "https://www.zapsplat.com/license-type/standard-license/"
         }
+    },
+    {
+        "file" : "sounds/zapsplat_west_wolf_Beach_Sea_Waves.mp3",
+        "label" : "Waves",
+        "initialVolume" : 0.5,
+        "category" : "Ambient",
+        "attribution" : {
+            "name" : "zapsplat.com",
+            "link" : "https://www.zapsplat.com/",
+            "licenseUrl" : "https://www.zapsplat.com/license-type/standard-license/"
+        }
     }
     
 ];
