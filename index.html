@@ -6,6 +6,9 @@
     <link rel="stylesheet" href="libraries/bootstrap-4.3.1-dist/css/bootstrap.min.css" type="text/css">
     <link rel="stylesheet" href="libraries/bootstrap-4.3.1-dist/css/bootstrap-grid.min.css" type="text/css">
     <link rel="stylesheet" href="libraries/bootstrap-4.3.1-dist/css/bootstrap-reboot.min.css" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/main.css" type="text/css">
     <style>
     </style>
@@ -14,38 +17,34 @@
   <body>
     <div class="container">
       <header>
-
+        <div class="actions-container">
+          <button type="button" class="btn btn-outline-primary" data-bind="click: resetSounds">Reset all sounds</button>
+          <!-- ko foreach: presetsConfiguration -->
+          <button type="button" class="btn btn-outline-primary" data-bind="click: function() { $parent.loadPreset($data); }, text: title"></button>
+          <!-- /ko -->
+        </div>
       </header>
-      <!-- ko foreach: soundControllers -->
-      <h3 data-bind="text: category, visible: showCategory">????</h3>
-      <div class="" data-bind="click: toggleActive, class: containerClasses">
-        <div data-bind="text: label"></div>
-        <!-- active: <span data-bind="text: active">???</span><br/> -->
-        <input type="range" min="1" max="100" value="50" data-bind="click: function() {}, clickBubble: false, value: selectedVolume, valueUpdate: 'input'">
-      </div>
-      <!-- /ko -->
-      <div class="actions-container">
-        <h3>Actions</h3>
-        <button type="button" class="btn btn-outline-primary" data-bind="click: resetSounds">Reset all sounds</button>
-        <h3>Presets</h3>
-        <!-- ko foreach: presetsConfiguration -->
-        <button type="button" class="btn btn-outline-primary" data-bind="click: function() { $parent.loadPreset($data); }, text: title"></button>
+      <div class="sounds-container">
+        <!-- ko foreach: soundControllers -->
+        <h4 data-bind="text: category, visible: showCategory">????</h4>
+        <div class="" data-bind="click: toggleActive, class: containerClasses">
+          <div data-bind="text: label"></div>
+          <!-- active: <span data-bind="text: active">???</span><br/> -->
+          <input type="range" min="1" max="100" value="50" data-bind="click: function() {}, clickBubble: false, value: selectedVolume, valueUpdate: 'input'">
+        </div>
         <!-- /ko -->
       </div>
       <div>
         To do:
         <ul>
-          <li>Some way of storing and display sound attributions</li>
-          <li>Setup continous deployment pipeline</li>
+          <li>Get all the attributions</li>
           <li>Collect a bazzilion sounds; birds but also back ground e.g. wind, waves</li>
           <li>Edit sounds? remove wind, dog barks, clicking etc</li>
-          <li>Make distinction between atmospheric sounds(?) and birds</li>
           <li>Setup/config presets for various environments</li>
-          <li>Put the actions and presets panels somewhere more useful</li>
         </ul>
       </div>
       <div>
-        <h3>Attributions</h3>
+        <h4>Attributions</h4>
         All sounds may have been modified to change volume levels, remove unwanted noises, and trim to the wanted lengths.
         <!-- ko foreach: soundControllers -->
         <!-- ko with: attribution -->
@@ -60,6 +59,8 @@
     <script src="scripts/knockout-3.5.1.js"></script>
     <script src="libraries/bootstrap-4.3.1-dist/js/bootstrap.bundle.min.js"></script>
     <script src="scripts/howler.js"></script>
+    <script src="scripts/soundconfig.js"></script>
+    <script src="scripts/presetconfig.js"></script>
     <script src="scripts/birdy.js"></script>
   </body>
 </html>

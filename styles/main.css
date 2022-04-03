@@ -1,7 +1,8 @@
-
-h1, h2, h3 {
+h1, h2, h3, h4, h5, h6 {
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  font-family: 'Gloria Hallelujah', cursive;
 }
-
 
 body {
   padding: 0;
@@ -10,19 +11,26 @@ body {
   background-color: #85c9ae;
 }
 
+header {
+  background-color: #003a3a;
+  padding: 1em;
+  margin-bottom: 1em;
+  text-align: center;
+}
+
 .sound-container {
-  padding: 1.2em;
-  margin: 1em;
+  padding: 0.5em;
+  margin: 0.5em;
   background-color: #fff;
   display: inline-block;
-  /* border: 4px solid #767676; */
   border-radius: 20px;
-  font-size: 1.1em;
-  width: 200px;
+  font-size: 1em;
+  width: 150px;
   text-align: center;
   box-shadow: rgb(100 100 111 / 20%) 0px 7px 29px 0px;
   vertical-align: middle;
   cursor: pointer;
+  font-family: 'Gloria Hallelujah', cursive;
 }
 
 .sound-active {
@@ -31,4 +39,70 @@ body {
 
 .sound-container input {
   margin-top: 1em;
+}
+
+/********** Range Input Styles **********/
+/*Range Reset*/
+input[type="range"] {
+  -webkit-appearance: none;
+   appearance: none;
+   background: transparent;
+   cursor: pointer;
+   /* width: 15rem; */
+}
+
+/* Removes default focus */
+input[type="range"]:focus {
+ outline: none;
+}
+
+/***** Chrome, Safari, Opera and Edge Chromium styles *****/
+/* slider track */
+input[type="range"]::-webkit-slider-runnable-track {
+  background-color: #053a5f;
+  border-radius: 0.5rem;
+  height: 0.5rem;  
+}
+
+/* slider thumb */
+input[type="range"]::-webkit-slider-thumb {
+ -webkit-appearance: none; /* Override default look */
+  appearance: none;
+  margin-top: -4px; /* Centers thumb on the track */
+
+  /*custom styles*/
+  background-color: #5cd5eb;
+  height: 1rem;
+  width: 0.5rem;
+}
+
+input[type="range"]:focus::-webkit-slider-thumb {   
+ border: 1px solid #053a5f;
+ outline: 3px solid #053a5f;
+ outline-offset: 0.125rem; 
+}
+
+/******** Firefox styles ********/
+/* slider track */
+input[type="range"]::-moz-range-track {
+  background-color: #053a5f;
+  border-radius: 0.5rem;
+  height: 0.5rem;
+}
+
+/* slider thumb */
+input[type="range"]::-moz-range-thumb {
+  border: none; /*Removes extra border that FF applies*/
+  border-radius: 0; /*Removes default border-radius that FF applies*/
+
+  /*custom styles*/
+  background-color: #5cd5eb;
+  height: 1rem;
+  width: 0.5rem;
+}
+
+input[type="range"]:focus::-moz-range-thumb {
+ border: 1px solid #053a5f;
+ outline: 3px solid #053a5f;
+ outline-offset: 0.125rem; 
 }
