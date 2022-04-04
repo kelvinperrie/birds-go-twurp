@@ -1,18 +1,23 @@
 var soundsConfiguration = [
     {
-        "file" : "sounds/Grey Warbler - Dave Holland.mp3",
+        "file" : "sounds/Grey-Warbler-Dave-Holland-altered.mp3",
         "label" : "Grey Warbler",
         "initialVolume" : 0.5,
         "attribution" : {
             "name" : "dave_holland",
-            "link" : "aaaa",
+            "link" : "https://inaturalist.nz/observations/64151151",
             "licenseUrl" : "https://creativecommons.org/licenses/by-nc/4.0/"
         }
     },
     {
-        "file" : "sounds/Pukeko - Dave Holland.mp3",
+        "file" : "sounds/Pukeko - Dave Holland-altered.mp3",
         "label" : "Pukeko",
-        "initialVolume" : 0.5
+        "initialVolume" : 0.5,
+        "attribution" : {
+            "name" : "dave_holland",
+            "link" : "https://inaturalist.nz/observations/55358453",
+            "licenseUrl" : "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
     },
     {
         "file" : "sounds/Tieke - Dave Holland.mp3",
@@ -119,7 +124,7 @@ var soundsConfiguration = [
     },
     {
         "file" : "sounds/zapsplat_Rain_Light_Thunder_Peel_LOOP.mp3",
-        "label" : "Rain and thunder",
+        "label" : "Rain + thunder",
         "initialVolume" : 0.2,
         "category" : "Ambient",
         "attribution" : {
