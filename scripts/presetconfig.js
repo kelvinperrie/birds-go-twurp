@@ -1,6 +1,6 @@
 var presetsConfiguration = [
     {
-        "title" : "Suburban Backyard",
+        "title" : "A backyard in Suburbia",
         "sounds" : [
             { "label" : "Blackbird", "volume" : 0.8 },
             { "label" : "Myna", "volume" : 0.8 },
@@ -8,7 +8,7 @@ var presetsConfiguration = [
         ]
     },
     {
-        "title" : "Farm",
+        "title" : "Down on the Farm",
         "sounds" : [
             { "label" : "Pukeko", "volume" : 0.8 },
             { "label" : "Chaffinch", "volume" : 0.8 },
