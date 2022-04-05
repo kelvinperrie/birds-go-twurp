@@ -60,9 +60,14 @@ var soundsConfiguration = [
         "initialVolume" : 0.5
     },
     {
-        "file" : "sounds/Magpie - andrewmaungakotukutuku.mp3",
+        "file" : "sounds/Magpie - 106060619 - andrewmaungakotukutuku.mp3",
         "label" : "Magpie",
-        "initialVolume" : 0.5
+        "initialVolume" : 0.5,
+        "attribution" : {
+            "name" : "andrewmaungakotukutuku",
+            "link" : "https://inaturalist.nz/observations/106060619",
+            "licenseUrl" : "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
     },
     {
         "file" : "sounds/NI Brown Kiwi - 69494291 - linds-nz-altered2.mp3",
@@ -95,10 +100,15 @@ var soundsConfiguration = [
         }
     },
     {
-        "file" : "sounds/Black Cicada - Dave Holland.mp3",
+        "file" : "sounds/Black Cicada - Dave Holland-altered.mp3",
         "label" : "Black Cicada",
         "initialVolume" : 0.5,
-        "category" : "Ambient"
+        "category" : "Ambient",
+        "attribution" : {
+            "name" : "dave_holland",
+            "link" : "https://inaturalist.nz/observations/69754050",
+            "licenseUrl" : "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
     },
     {
         "file" : "sounds/zapsplat_nature_rainfall_light_on_tent.mp3",
