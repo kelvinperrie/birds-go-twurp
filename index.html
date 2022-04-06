@@ -20,7 +20,7 @@
         <div class="actions-container">
           <button type="button" class="btn btn-outline-primary" data-bind="click: resetSounds">Reset all sounds</button>
           <!-- ko foreach: presetsConfiguration -->
-          <button type="button" class="btn btn-outline-primary" data-bind="click: function() { $parent.loadPreset($data); }, text: title"></button>
+          <button type="button" class="btn btn-outline-primary" data-bind="click: function() { $parent.loadPreset($data); }, text: title, attr: { disabled : !active }"></button>
           <!-- /ko -->
         </div>
       </header>

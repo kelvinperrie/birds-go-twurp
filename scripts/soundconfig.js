@@ -20,44 +20,74 @@ var soundsConfiguration = [
         }
     },
     {
-        "file" : "sounds/Tieke - Dave Holland.mp3",
+        "file" : "sounds/Tieke - 55358418 - Dave Holland-altered.mp3",
         "label" : "Tieke",
-        "initialVolume" : 0.5
-    },
-    {
-        "file" : "sounds/Blackbird - saracoutinho.wav",
-        "label" : "Blackbird",
-        "initialVolume" : 0.5
-    },
-    {
-        "file" : "sounds/Blackbirds - kate_mcalpine.m4a",
-        "label" : "Blackbirds",
-        "initialVolume" : 0.5
-    },
-    {
-        "file" : "sounds/Myna - Soggybottomnz.m4a",
-        "label" : "Myna",
         "initialVolume" : 0.5,
         "attribution" : {
-            "name" : "Soggybottomnz",
-            "link" : "aaaa",
+            "name" : "dave_holland",
+            "link" : "https://inaturalist.nz/observations/55358418",
             "licenseUrl" : "https://creativecommons.org/licenses/by-nc/4.0/"
         }
     },
     {
-        "file" : "sounds/Sparrows - duncanmc42.wav",
+        "file" : "sounds/Blackbird - 100668538 - andrewmaungakotukutuku.mp3",
+        "label" : "Blackbird",
+        "initialVolume" : 0.5,
+        "attribution" : {
+            "name" : "andrewmaungakotukutuku",
+            "link" : "https://inaturalist.nz/observations/100668538",
+            "licenseUrl" : "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+    },
+    {
+        "file" : "sounds/Blackbirds - 103655947 - kate_mcalpine.m4a",
+        "label" : "Blackbirds",
+        "initialVolume" : 0.5,
+        "attribution" : {
+            "name" : "kate_mcalpine",
+            "link" : "https://inaturalist.nz/observations/103655947",
+            "licenseUrl" : "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+    },
+    {
+        "file" : "sounds/Myna - 93305070 - Soggybottomnz.mp3",
+        "label" : "Myna",
+        "initialVolume" : 0.5,
+        "attribution" : {
+            "name" : "Soggybottomnz",
+            "link" : "https://inaturalist.nz/observations/93305070",
+            "licenseUrl" : "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+    },
+    {
+        "file" : "sounds/Sparrows - 93568615 - duncanmc42.wav",
         "label" : "Sparrows",
-        "initialVolume" : 0.5
+        "initialVolume" : 0.5,
+        "attribution" : {
+            "name" : "duncanmc42",
+            "link" : "https://inaturalist.nz/observations/93568615",
+            "licenseUrl" : "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
     },
     {
-        "file" : "sounds/Sparrows - saracoutinho.wav",
+        "file" : "sounds/Sparrows - 100900419 - saracoutinho.wav",
         "label" : "More Sparrows",
-        "initialVolume" : 0.5
+        "initialVolume" : 0.5,
+        "attribution" : {
+            "name" : "saracoutinho",
+            "link" : "https://inaturalist.nz/observations/100900419",
+            "licenseUrl" : "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
     },
     {
-        "file" : "sounds/Chaffinch - malletrj.m4a",
+        "file" : "sounds/Chafinch - 93661256 - duncanmc42.wav",
         "label" : "Chaffinch",
-        "initialVolume" : 0.5
+        "initialVolume" : 0.5,
+        "attribution" : {
+            "name" : "duncanmc42",
+            "link" : "https://inaturalist.nz/observations/93661256",
+            "licenseUrl" : "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
     },
     {
         "file" : "sounds/Magpie - 106060619 - andrewmaungakotukutuku.mp3",
@@ -96,6 +126,16 @@ var soundsConfiguration = [
         "attribution" : {
             "name" : "andrewmaungakotukutuku",
             "link" : "https://inaturalist.nz/observations/100382629",
+            "licenseUrl" : "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+    },
+    {
+        "file" : "sounds/NI Robin - 102787158 - flowertea.mp3",
+        "label" : "NI Robin",
+        "initialVolume" : 0.5,
+        "attribution" : {
+            "name" : "flowertea",
+            "link" : "https://inaturalist.nz/observations/102787158",
             "licenseUrl" : "https://creativecommons.org/licenses/by-nc/4.0/"
         }
     },
