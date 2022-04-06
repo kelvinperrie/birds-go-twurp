@@ -1,6 +1,6 @@
 var presetsConfiguration = [
     {
-        "title" : "Suburbian Backyard",
+        "title" : "Home / Suburbian Backyard",
         "active" : true,
         "sounds" : [
             { "label" : "Blackbird", "volume" : 0.5 },
@@ -10,7 +10,7 @@ var presetsConfiguration = [
         ]
     },
     {
-        "title" : "Bush Walk",
+        "title" : "Quiet Bush Walk",
         "active" : true,
         "sounds" : [
             { "label" : "Piwakawaka / Fantail", "volume" : 0.5 },
@@ -19,7 +19,7 @@ var presetsConfiguration = [
         ]
     },
     {
-        "title" : "Down on the Farm",
+        "title" : "Out on the Farm",
         "active" : true,
         "sounds" : [
             { "label" : "Pukeko", "volume" : 0.8 },

@@ -54,6 +54,10 @@ header {
   bottom: 2px;
 }
 
+.btn {
+  margin-bottom: 0.3rem;
+}
+
 /********** Range Input Styles **********/
 /*Range Reset*/
 input[type="range"] {
