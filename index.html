@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="styles/main.css" type="text/css">
     <style>
     </style>
-    <title>JJJJJJ</title>
+    <title>sounds like New Zealand</title>
   </head>
   <body>
     <div class="container">
@@ -22,13 +22,16 @@
           <!-- ko foreach: presetsConfiguration -->
           <button type="button" class="btn btn-outline-primary" data-bind="click: function() { $parent.loadPreset($data); }, text: title, attr: { disabled : !active }"></button>
           <!-- /ko -->
+          <a href="https://github.com/kelvinperrie/birds-go-twurp"><img class="github-link" src="images/GitHub-Mark-32px.png" alt="github icon" title="see the source on Github" /></a>
         </div>
       </header>
       <div class="sounds-container">
         <!-- ko foreach: soundControllers -->
         <h4 data-bind="text: category, visible: showCategory">????</h4>
         <div class="" data-bind="click: toggleActive, class: containerClasses">
-          <div data-bind="text: label"></div>
+          <div class="sound-name-container">
+            <div class="sound-name" data-bind="text: label"></div>
+          </div>
           <!-- active: <span data-bind="text: active">???</span><br/> -->
           <input type="range" min="1" max="100" value="50" data-bind="click: function() {}, clickBubble: false, value: selectedVolume, valueUpdate: 'input'">
         </div>

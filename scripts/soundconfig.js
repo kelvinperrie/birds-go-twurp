@@ -1,7 +1,7 @@
 var soundsConfiguration = [
     {
         "file" : "sounds/Grey-Warbler-Dave-Holland-altered.mp3",
-        "label" : "Grey Warbler",
+        "label" : "Riroriro / Grey Warbler",
         "initialVolume" : 0.5,
         "attribution" : {
             "name" : "dave_holland",
@@ -21,7 +21,7 @@ var soundsConfiguration = [
     },
     {
         "file" : "sounds/Tieke - 55358418 - Dave Holland-altered.mp3",
-        "label" : "Tieke",
+        "label" : "Tieke / Saddleback",
         "initialVolume" : 0.5,
         "attribution" : {
             "name" : "dave_holland",
@@ -101,7 +101,7 @@ var soundsConfiguration = [
     },
     {
         "file" : "sounds/NI Brown Kiwi - 69494291 - linds-nz-altered2.mp3",
-        "label" : "NI Brown Kiwi",
+        "label" : "North Island Brown Kiwi",
         "initialVolume" : 0.5,
         "attribution" : {
             "name" : "linds-nz",
@@ -121,7 +121,7 @@ var soundsConfiguration = [
     },
     {
         "file" : "sounds/Ruru - 100382629 - andrewmaungakotukutuku-altered.mp3",
-        "label" : "Ruru",
+        "label" : "Ruru / Morepork",
         "initialVolume" : 0.5,
         "attribution" : {
             "name" : "andrewmaungakotukutuku",
@@ -131,11 +131,41 @@ var soundsConfiguration = [
     },
     {
         "file" : "sounds/NI Robin - 102787158 - flowertea.mp3",
-        "label" : "NI Robin",
+        "label" : "Tautauwai / N.I. Robin",
         "initialVolume" : 0.5,
         "attribution" : {
             "name" : "flowertea",
             "link" : "https://inaturalist.nz/observations/102787158",
+            "licenseUrl" : "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+    },
+    {
+        "file" : "sounds/Bellbird - 108909011 - ofo16-altered.mp3",
+        "label" : "Korimako / Bellbird",
+        "initialVolume" : 0.5,
+        "attribution" : {
+            "name" : "ofo16",
+            "link" : "https://inaturalist.nz/observations/108909011",
+            "licenseUrl" : "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+    },
+    {
+        "file" : "sounds/Tomtit - 95739488 - elixzabeth-altered.mp3",
+        "label" : "Ngirungiru / Tomtit",
+        "initialVolume" : 0.5,
+        "attribution" : {
+            "name" : "elixzabeth",
+            "link" : "https://inaturalist.nz/observations/95739488",
+            "licenseUrl" : "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+    },
+    {
+        "file" : "sounds/Fantail - 108770753 - soggybottomnz-altered.mp3",
+        "label" : "Piwakawaka / Fantail",
+        "initialVolume" : 0.5,
+        "attribution" : {
+            "name" : "soggybottomnz",
+            "link" : "https://inaturalist.nz/observations/108770753",
             "licenseUrl" : "https://creativecommons.org/licenses/by-nc/4.0/"
         }
     },
@@ -147,6 +177,17 @@ var soundsConfiguration = [
         "attribution" : {
             "name" : "dave_holland",
             "link" : "https://inaturalist.nz/observations/69754050",
+            "licenseUrl" : "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+    },
+    {
+        "file" : "sounds/Black Field Cricket - 41589459 - obblue.mp3",
+        "label" : "Cricket",
+        "initialVolume" : 0.5,
+        "category" : "Ambient",
+        "attribution" : {
+            "name" : "obblue",
+            "link" : "https://inaturalist.nz/observations/41589459",
             "licenseUrl" : "https://creativecommons.org/licenses/by-nc/4.0/"
         }
     },

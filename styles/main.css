@@ -31,14 +31,27 @@ header {
   vertical-align: middle;
   cursor: pointer;
   font-family: 'Gloria Hallelujah', cursive;
+  user-select: none;
 }
-
+.sound-name-container {
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .sound-active {
   background-color:#a8ffa8;
 }
 
 .sound-container input {
   margin-top: 1em;
+}
+
+.github-link{
+  padding: 2px;
+  position: fixed;
+  right: 2px;
+  bottom: 2px;
 }
 
 /********** Range Input Styles **********/
