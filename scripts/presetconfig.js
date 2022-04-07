@@ -1,6 +1,6 @@
 var presetsConfiguration = [
     {
-        "title" : "Home / Suburbian Backyard",
+        "title" : "Suburbian Backyard",
         "active" : true,
         "sounds" : [
             { "label" : "Blackbird", "volume" : 0.5 },
@@ -10,12 +10,24 @@ var presetsConfiguration = [
         ]
     },
     {
+        "title" : "Home",
+        "active" : true,
+        "sounds" : [
+            { "label" : "Blackbird", "volume" : 0.5 },
+            { "label" : "Piwakawaka / Fantail", "volume" : 0.5 },
+            { "label" : "Sparrows", "volume" : 0.5 },
+            { "label" : "Wind in trees", "volume" : 0.05 },
+            { "label" : "Waves", "volume" : 0.1 }
+        ]
+    },
+    {
         "title" : "Quiet Bush Walk",
         "active" : true,
         "sounds" : [
             { "label" : "Piwakawaka / Fantail", "volume" : 0.5 },
             { "label" : "River", "volume" : 0.25 },
-            { "label" : "Black Cicada", "volume" : 0.5 }
+            { "label" : "Black Cicada", "volume" : 0.5 },
+            { "label" : "Tui", "volume" : 0.5 }
         ]
     },
     {
@@ -28,7 +40,7 @@ var presetsConfiguration = [
         ]
     },
     {
-        "title" : "Rotokare Bird Sanctuary",
+        "title" : "Bird Sanctuary",
         "active" : true,
         "sounds" : [
             { "label" : "Tieke / Saddleback", "volume" : 0.8 },
@@ -38,6 +50,11 @@ var presetsConfiguration = [
             { "label" : "Korimako / Bellbird", "volume" : 0.7 },
             { "label" : "Ngirungiru / Tomtit", "volume" : 0.7 }
         ]
+    },
+    {
+        "title" : "Estuary",
+        "active" : false,
+        "sounds" : []
     },
     {
         "title" : "Night Camp",

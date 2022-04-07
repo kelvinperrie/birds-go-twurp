@@ -10,6 +10,16 @@ var soundsConfiguration = [
         }
     },
     {
+        "file" : "sounds/Tui - 103327479 - saracoutinho-altered1.mp3",
+        "label" : "Tui",
+        "initialVolume" : 0.5,
+        "attribution" : {
+            "name" : "saracoutinho",
+            "link" : "https://inaturalist.nz/observations/103327479",
+            "licenseUrl" : "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+    },
+    {
         "file" : "sounds/Pukeko - Dave Holland-altered.mp3",
         "label" : "Pukeko",
         "initialVolume" : 0.5,
