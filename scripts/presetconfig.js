@@ -79,9 +79,13 @@ var presetsConfiguration = [
         ]
     },
     {
-        "title" : "At the Beach",
-        "active" : false,
-        "sounds" : []
+        "title" : "Chips at the Beach",
+        "active" : true,
+        "sounds" : [
+            { "label" : "Red Billed Gull", "volume" : 0.4 },
+            { "label" : "Kōtare - Kingfisher", "volume" : 0.5 },
+            { "label" : "Waves", "volume" : 0.4 },
+            { "label" : "Black Cicada", "volume" : 0.3 }]
     },
     {
         "title" : "Alpine Trek",

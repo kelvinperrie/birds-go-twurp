@@ -230,6 +230,26 @@ var soundsConfiguration = [
         }
     },
     {
+        "file" : "sounds/Red Billed Gull - 7686395 - by - tony_wills-altered.mp3",
+        "label" : "Red Billed Gull",
+        "initialVolume" : 0.5,
+        "attribution" : {
+            "name" : "tony_wills",
+            "link" : "https://inaturalist.nz/observations/7686395",
+            "licenseUrl" : "https://creativecommons.org/licenses/by/4.0/"
+        }
+    },
+    {
+        "file" : "sounds/Australasian Gannet - 40831936 - by - intyrely_eco-altered.mp3",
+        "label" : "Australasian Gannet",
+        "initialVolume" : 0.5,
+        "attribution" : {
+            "name" : "intyrely_eco",
+            "link" : "https://inaturalist.nz/observations/40831936",
+            "licenseUrl" : "https://creativecommons.org/licenses/by/4.0/"
+        }
+    },
+    {
         "file" : "sounds/Black Cicada - Dave Holland-altered.mp3",
         "label" : "Black Cicada",
         "initialVolume" : 0.5,
