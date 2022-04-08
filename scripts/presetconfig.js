@@ -10,6 +10,16 @@ var presetsConfiguration = [
         ]
     },
     {
+        "title" : "Quiet Bush Walk",
+        "active" : true,
+        "sounds" : [
+            { "label" : "Piwakawaka / Fantail", "volume" : 0.5 },
+            { "label" : "River", "volume" : 0.25 },
+            { "label" : "Black Cicada", "volume" : 0.5 },
+            { "label" : "Tui", "volume" : 0.5 }
+        ]
+    },
+    {
         "title" : "Home",
         "active" : true,
         "sounds" : [
@@ -21,22 +31,13 @@ var presetsConfiguration = [
         ]
     },
     {
-        "title" : "Quiet Bush Walk",
-        "active" : true,
-        "sounds" : [
-            { "label" : "Piwakawaka / Fantail", "volume" : 0.5 },
-            { "label" : "River", "volume" : 0.25 },
-            { "label" : "Black Cicada", "volume" : 0.5 },
-            { "label" : "Tui", "volume" : 0.5 }
-        ]
-    },
-    {
         "title" : "Out on the Farm",
         "active" : true,
         "sounds" : [
             { "label" : "Pukeko", "volume" : 0.8 },
             { "label" : "Chaffinch", "volume" : 0.8 },
-            { "label" : "Magpie", "volume" : 0.8 }
+            { "label" : "Magpie", "volume" : 0.8 },
+            { "label" : "Kāhu - Hawk", "volume" : 0.8 }
         ]
     },
     {
@@ -49,6 +50,17 @@ var presetsConfiguration = [
             { "label" : "Tautauwai / N.I. Robin", "volume" : 0.5 },
             { "label" : "Korimako / Bellbird", "volume" : 0.7 },
             { "label" : "Ngirungiru / Tomtit", "volume" : 0.7 }
+        ]
+    },
+    {
+        "title" : "Trouble on the Farm",
+        "active" : true,
+        "sounds" : [
+            { "label" : "Canada Goose", "volume" : 0.5 },
+            { "label" : "Coastal California Quail", "volume" : 0.5 },
+            { "label" : "Rain + thunder", "volume" : 0.2 },
+            { "label" : "Magpie", "volume" : 0.8 },
+            { "label" : "Paradise Shelduck", "volume" : 0.5 }
         ]
     },
     {

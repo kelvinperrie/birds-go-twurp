@@ -180,6 +180,56 @@ var soundsConfiguration = [
         }
     },
     {
+        "file" : "sounds/Paradise Shelduck - 73090513 - jennysaito.mp3",
+        "label" : "Paradise Shelduck",
+        "initialVolume" : 0.5,
+        "attribution" : {
+            "name" : "jennysaito",
+            "link" : "https://inaturalist.nz/observations/73090513",
+            "licenseUrl" : "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+    },
+    {
+        "file" : "sounds/Kingfisher - 62389385 - joepb-altered.mp3",
+        "label" : "Kōtare - Kingfisher",
+        "initialVolume" : 0.5,
+        "attribution" : {
+            "name" : "joepb",
+            "link" : "https://inaturalist.nz/observations/62389385",
+            "licenseUrl" : "https://creativecommons.org/licenses/by/4.0/"
+        }
+    },
+    {
+        "file" : "sounds/Australasian Harrier - 96456684 - joepb-altered.mp3",
+        "label" : "Kāhu - Hawk",
+        "initialVolume" : 0.5,
+        "attribution" : {
+            "name" : "joepb",
+            "link" : "https://inaturalist.nz/observations/96456684",
+            "licenseUrl" : "https://creativecommons.org/licenses/by/4.0/"
+        }
+    },
+    {
+        "file" : "sounds/Coastal California Quail - 60273726 - by - joepb-altered.mp3",
+        "label" : "Coastal California Quail",
+        "initialVolume" : 0.5,
+        "attribution" : {
+            "name" : "joepb",
+            "link" : "https://inaturalist.nz/observations/96456684",
+            "licenseUrl" : "https://creativecommons.org/licenses/by/4.0/"
+        }
+    },
+    {
+        "file" : "sounds/Giant Canada Goose - 63462187 - by - jacqui-nz-altered.mp3",
+        "label" : "Canada Goose",
+        "initialVolume" : 0.5,
+        "attribution" : {
+            "name" : "jacqui-nz",
+            "link" : "https://inaturalist.nz/observations/63462187",
+            "licenseUrl" : "https://creativecommons.org/licenses/by/4.0/"
+        }
+    },
+    {
         "file" : "sounds/Black Cicada - Dave Holland-altered.mp3",
         "label" : "Black Cicada",
         "initialVolume" : 0.5,
