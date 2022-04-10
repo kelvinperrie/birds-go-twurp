@@ -316,7 +316,7 @@ var soundsConfiguration = [
         }
     },
     {
-        "file" : "sounds/river-trimcrop.mp3",
+        "file" : "sounds/river-trimcrop1.mp3",
         "label" : "River",
         "initialVolume" : 0.5,
         "category" : "Ambient",
