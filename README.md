@@ -7,7 +7,7 @@ https://birdsoundsci.netlify.app/
 
 To do:
 
-* Get all the attributions  
-* Collect a bazzilion sounds; birds but also back ground e.g. wind, waves  
-* Edit sounds? remove wind, dog barks, clicking etc  
-* Setup/config presets for various environments  
+* Fix the problem with sounds not looping properly (gap between end and start)
+* Make so sounds only load when requested to be played?
+* Check attributions & licenses are accurate
+* More birds, more presets  
