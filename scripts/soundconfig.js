@@ -4,7 +4,7 @@ var soundsConfiguration = [
         "label" : "Riroriro / Grey Warbler",
         "initialVolume" : 0.5,
         "attribution" : {
-            "name" : "dave_holland",
+            "name" : "Dave",
             "link" : "https://inaturalist.nz/observations/64151151",
             "licenseUrl" : "https://creativecommons.org/licenses/by-nc/4.0/"
         }
@@ -24,7 +24,7 @@ var soundsConfiguration = [
         "label" : "Pukeko",
         "initialVolume" : 0.5,
         "attribution" : {
-            "name" : "dave_holland",
+            "name" : "Dave",
             "link" : "https://inaturalist.nz/observations/55358453",
             "licenseUrl" : "https://creativecommons.org/licenses/by-nc/4.0/"
         }
@@ -34,7 +34,7 @@ var soundsConfiguration = [
         "label" : "Tieke / Saddleback",
         "initialVolume" : 0.5,
         "attribution" : {
-            "name" : "dave_holland",
+            "name" : "Dave",
             "link" : "https://inaturalist.nz/observations/55358418",
             "licenseUrl" : "https://creativecommons.org/licenses/by-nc/4.0/"
         }
@@ -54,7 +54,7 @@ var soundsConfiguration = [
         "label" : "Blackbirds",
         "initialVolume" : 0.5,
         "attribution" : {
-            "name" : "kate_mcalpine",
+            "name" : "Kate McAlpine",
             "link" : "https://inaturalist.nz/observations/103655947",
             "licenseUrl" : "https://creativecommons.org/licenses/by-nc/4.0/"
         }
@@ -74,7 +74,7 @@ var soundsConfiguration = [
         "label" : "Sparrows",
         "initialVolume" : 0.5,
         "attribution" : {
-            "name" : "duncanmc42",
+            "name" : "Duncan Cunningham",
             "link" : "https://inaturalist.nz/observations/93568615",
             "licenseUrl" : "https://creativecommons.org/licenses/by-nc/4.0/"
         }
@@ -94,7 +94,7 @@ var soundsConfiguration = [
         "label" : "Chaffinch",
         "initialVolume" : 0.5,
         "attribution" : {
-            "name" : "duncanmc42",
+            "name" : "Duncan Cunningham",
             "link" : "https://inaturalist.nz/observations/93661256",
             "licenseUrl" : "https://creativecommons.org/licenses/by-nc/4.0/"
         }
@@ -114,7 +114,7 @@ var soundsConfiguration = [
         "label" : "North Island Brown Kiwi",
         "initialVolume" : 0.5,
         "attribution" : {
-            "name" : "linds-nz",
+            "name" : "Lindsay Alexander",
             "link" : "https://inaturalist.nz/observations/69494291",
             "licenseUrl" : "https://creativecommons.org/licenses/by-nc/4.0/"
         }
@@ -124,7 +124,7 @@ var soundsConfiguration = [
         "label" : "Ruru squawk",
         "initialVolume" : 0.5,
         "attribution" : {
-            "name" : "linds-nz",
+            "name" : "Lindsay Alexander",
             "link" : "https://inaturalist.nz/observations/102334719",
             "licenseUrl" : "https://creativecommons.org/licenses/by-nc/4.0/"
         }
@@ -164,7 +164,7 @@ var soundsConfiguration = [
         "label" : "Ngirungiru / Tomtit",
         "initialVolume" : 0.5,
         "attribution" : {
-            "name" : "elixzabeth",
+            "name" : "Beth Wishart",
             "link" : "https://inaturalist.nz/observations/95739488",
             "licenseUrl" : "https://creativecommons.org/licenses/by-nc/4.0/"
         }
@@ -184,7 +184,7 @@ var soundsConfiguration = [
         "label" : "Paradise Shelduck",
         "initialVolume" : 0.5,
         "attribution" : {
-            "name" : "jennysaito",
+            "name" : "Jenny Saito",
             "link" : "https://inaturalist.nz/observations/73090513",
             "licenseUrl" : "https://creativecommons.org/licenses/by-nc/4.0/"
         }
@@ -194,7 +194,7 @@ var soundsConfiguration = [
         "label" : "Kōtare - Kingfisher",
         "initialVolume" : 0.5,
         "attribution" : {
-            "name" : "joepb",
+            "name" : "Joe Potter Butler",
             "link" : "https://inaturalist.nz/observations/62389385",
             "licenseUrl" : "https://creativecommons.org/licenses/by/4.0/"
         }
@@ -204,7 +204,7 @@ var soundsConfiguration = [
         "label" : "Kāhu - Hawk",
         "initialVolume" : 0.5,
         "attribution" : {
-            "name" : "joepb",
+            "name" : "Joe Potter Butler",
             "link" : "https://inaturalist.nz/observations/96456684",
             "licenseUrl" : "https://creativecommons.org/licenses/by/4.0/"
         }
@@ -214,7 +214,7 @@ var soundsConfiguration = [
         "label" : "Coastal California Quail",
         "initialVolume" : 0.5,
         "attribution" : {
-            "name" : "joepb",
+            "name" : "Joe Potter Butler",
             "link" : "https://inaturalist.nz/observations/96456684",
             "licenseUrl" : "https://creativecommons.org/licenses/by/4.0/"
         }
@@ -224,7 +224,7 @@ var soundsConfiguration = [
         "label" : "Canada Goose",
         "initialVolume" : 0.5,
         "attribution" : {
-            "name" : "jacqui-nz",
+            "name" : "Jacqui Geux",
             "link" : "https://inaturalist.nz/observations/63462187",
             "licenseUrl" : "https://creativecommons.org/licenses/by/4.0/"
         }
@@ -234,7 +234,7 @@ var soundsConfiguration = [
         "label" : "Red Billed Gull",
         "initialVolume" : 0.5,
         "attribution" : {
-            "name" : "tony_wills",
+            "name" : "Tony Wills",
             "link" : "https://inaturalist.nz/observations/7686395",
             "licenseUrl" : "https://creativecommons.org/licenses/by/4.0/"
         }
@@ -244,7 +244,7 @@ var soundsConfiguration = [
         "label" : "Australasian Gannet",
         "initialVolume" : 0.5,
         "attribution" : {
-            "name" : "intyrely_eco",
+            "name" : "Spencer McIntyre",
             "link" : "https://inaturalist.nz/observations/40831936",
             "licenseUrl" : "https://creativecommons.org/licenses/by/4.0/"
         }
@@ -255,7 +255,7 @@ var soundsConfiguration = [
         "initialVolume" : 0.5,
         "category" : "Ambient",
         "attribution" : {
-            "name" : "dave_holland",
+            "name" : "Dave",
             "link" : "https://inaturalist.nz/observations/69754050",
             "licenseUrl" : "https://creativecommons.org/licenses/by-nc/4.0/"
         }
@@ -266,7 +266,7 @@ var soundsConfiguration = [
         "initialVolume" : 0.5,
         "category" : "Ambient",
         "attribution" : {
-            "name" : "obblue",
+            "name" : "Andrew Nevin",
             "link" : "https://inaturalist.nz/observations/41589459",
             "licenseUrl" : "https://creativecommons.org/licenses/by-nc/4.0/"
         }
@@ -283,7 +283,7 @@ var soundsConfiguration = [
         }
     },
     {
-        "file" : "sounds/zapsplat_nature_wind_strong_gusts_blowing_through_trees_and_bushes.mp3",
+        "file" : "sounds/zapsplat_nature_wind_strong_gusts_blowing_through_trees_and_bushes1.mp3",
         "label" : "Wind in trees",
         "initialVolume" : 0.2,
         "category" : "Ambient",
@@ -316,7 +316,7 @@ var soundsConfiguration = [
         }
     },
     {
-        "file" : "sounds/river-trimcrop1.mp3",
+        "file" : "sounds/river-trimcrop2.mp3",
         "label" : "River",
         "initialVolume" : 0.5,
         "category" : "Ambient",

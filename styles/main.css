@@ -42,6 +42,10 @@ header {
 .sound-active {
   background-color:#a8ffa8;
 }
+.sound-not-ready {
+  background-color:#c4c4c4;
+  cursor: default;
+}
 
 .sound-container input {
   margin-top: 1em;

@@ -71,6 +71,9 @@ var soundControllerModel = function(soundConfig) {
     // determines the class for our sound
     self.containerClasses = ko.computed(function() {
         var classes = "sound-container";
+        if(!self.ready()) {
+            classes += " sound-not-ready";
+        }
         if(self.active()) {
             classes += " sound-active";
         }
@@ -100,6 +103,7 @@ var soundControllerModel = function(soundConfig) {
     self.toggleActive = function() {
         if(!self.ready()) {
             console.log("can't do anything, sound ain't ready yet - this a problem");
+            alert("I couldn't play this sound because it hasn't loaded. Sorry about that. It might be still loading, or, an error might have happened :(.")
             return;
         }
         if(self.active()) {
