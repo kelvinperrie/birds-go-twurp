@@ -4,6 +4,9 @@ continuous integration with master/dev branch:
 
 https://birdsoundsci.netlify.app/
 
+release branch:
+
+https://birdsounds.netlify.app/
 
 To do:
 
