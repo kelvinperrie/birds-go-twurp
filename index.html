@@ -21,13 +21,16 @@
   </head>
   <body>
     <div class="container">
+      <div class="external-links-container">
+        <a href="https://twitter.com/kelvinperrie" target="_blank"><img class="" src="images/twitter-logo-32px.png" alt="twitter icon" title="visit me on twitter" /></a>
+        <a href="https://github.com/kelvinperrie/birds-go-twurp" target="_blank"><img class="github-link" src="images/GitHub-Mark-32px.png" alt="github icon" title="see the source on Github" /></a>
+      </div>
       <header>
         <div class="actions-container">
           <button type="button" class="btn btn-outline-primary" data-bind="click: resetSounds">Reset all sounds</button>
           <!-- ko foreach: presetsConfiguration -->
           <button type="button" class="btn btn-outline-primary" data-bind="click: function() { $parent.loadPreset($data); }, text: title, attr: { disabled : !active }"></button>
           <!-- /ko -->
-          <a href="https://github.com/kelvinperrie/birds-go-twurp"><img class="github-link" src="images/GitHub-Mark-32px.png" alt="github icon" title="see the source on Github" /></a>
         </div>
       </header>
       <div class="sounds-container">
