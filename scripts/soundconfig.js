@@ -70,7 +70,7 @@ var soundsConfiguration = [
         }
     },
     {
-        "file" : "sounds/Sparrows - 93568615 - duncanmc42.wav",
+        "file" : "sounds/Sparrows - 93568615 - duncanmc42.mp3",
         "label" : "Sparrows",
         "initialVolume" : 0.5,
         "attribution" : {
@@ -80,7 +80,7 @@ var soundsConfiguration = [
         }
     },
     {
-        "file" : "sounds/Sparrows - 100900419 - saracoutinho.wav",
+        "file" : "sounds/Sparrows - 100900419 - saracoutinho.mp3",
         "label" : "More Sparrows",
         "initialVolume" : 0.5,
         "attribution" : {
@@ -90,7 +90,7 @@ var soundsConfiguration = [
         }
     },
     {
-        "file" : "sounds/Chafinch - 93661256 - duncanmc42.wav",
+        "file" : "sounds/Chafinch - 93661256 - duncanmc42.mp3",
         "label" : "Chaffinch",
         "initialVolume" : 0.5,
         "attribution" : {
@@ -120,7 +120,7 @@ var soundsConfiguration = [
         }
     },
     {
-        "file" : "sounds/Ruru - 102334719 - linds-nz.wav",
+        "file" : "sounds/Ruru - 102334719 - linds-nz.mp3",
         "label" : "Ruru squawk",
         "initialVolume" : 0.5,
         "attribution" : {
