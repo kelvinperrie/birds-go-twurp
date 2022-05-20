@@ -31,7 +31,7 @@ var presetsConfiguration = [
         ]
     },
     {
-        "title" : "Out on the Farm",
+        "title" : "Farm walk",
         "active" : true,
         "sounds" : [
             { "label" : "Pukeko", "volume" : 0.8 },
