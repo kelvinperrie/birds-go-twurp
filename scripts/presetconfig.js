@@ -63,11 +63,11 @@ var presetsConfiguration = [
             { "label" : "Paradise Shelduck", "volume" : 0.5 }
         ]
     },
-    {
-        "title" : "Estuary",
-        "active" : false,
-        "sounds" : []
-    },
+    // {
+    //     "title" : "Estuary",
+    //     "active" : false,
+    //     "sounds" : []
+    // },
     {
         "title" : "Night Camp",
         "active" : true,
@@ -86,10 +86,11 @@ var presetsConfiguration = [
             { "label" : "Kōtare - Kingfisher", "volume" : 0.5 },
             { "label" : "Waves", "volume" : 0.4 },
             { "label" : "Black Cicada", "volume" : 0.3 }]
-    },
-    {
-        "title" : "Alpine Trek",
-        "active" : false,
-        "sounds" : []
     }
+    //,
+    // {
+    //     "title" : "Alpine Trek",
+    //     "active" : false,
+    //     "sounds" : []
+    // }
 ];

@@ -5,7 +5,11 @@ continuous integration with master/dev branch:
 https://birdsoundsci.netlify.app/
 
 
+release branch is at:
+
+https://birdsounds.netlify.app/
+
 To do:
 
-* Convert wav files to mp3
-* More birds, more presets  
+* find some alpine birds? estury?
+
