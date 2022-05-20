@@ -55,6 +55,7 @@ var soundControllerModel = function(soundConfig) {
 
     self.soundConfig = soundConfig;         // the configuration that defines this sound
     self.ready = ko.observable(false);      // tracks whether this sound is ready to be played
+    self.loading = ko.observable(false);    // tracks if the sound is currently being loaded
     self.active = ko.observable(false);     // tracks if the sound is active i.e. being played
     self.seekWhenStopped = 0;               // the point in the sound where it was last stopped
 
@@ -101,17 +102,27 @@ var soundControllerModel = function(soundConfig) {
      });
 
     self.toggleActive = function() {
-        if(!self.ready()) {
-            console.log("can't do anything, sound ain't ready yet - this a problem");
-            alert("I couldn't play this sound because it hasn't loaded. Sorry about that. It might be still loading, or, an error might have happened :(.")
+
+        // if the sound is loading then we can't do anything
+        if(self.loading()) {
             return;
         }
-        if(self.active()) {
-            self.stopSound();
+
+        if(!self.ready()) {
+            // set the active flag to indicate it is currently being played
+            self.active(true);
+            self.loading(true);
+            self.howlerObject.load();
+
         } else {
-            // play the sound; play it from where ever it was last stopped
-            // when a seek is completed play() will be called
-            self.howlerObject.seek(self.seekWhenStopped);
+
+            if(self.active()) {
+                self.stopSound();
+            } else {
+                // play the sound; play it from where ever it was last stopped
+                // when a seek is completed play() will be called
+                self.howlerObject.seek(self.seekWhenStopped);
+            }
         }
     }
 
@@ -120,9 +131,14 @@ var soundControllerModel = function(soundConfig) {
             src: [self.file()],
             loop: true,
             volume: self.volume(),
+            preload: false,
             onload : function() {
-                // the sound is loaded, so we're going to set the ready flag which indicates we can play it when wanted
+                // the sound is loaded
+                // so we're going to set the ready flag which indicates we can play it when wanted
                 self.ready(true);
+                self.loading(false);
+                // we only load the sound when it has been requested to be played, so now that it is loaded, play it
+                self.howlerObject.play();
             },
             onstop : function() {
                 //console.log('stopped!');
