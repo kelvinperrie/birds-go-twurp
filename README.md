@@ -7,5 +7,5 @@ https://birdsoundsci.netlify.app/
 
 To do:
 
-* Make so sounds only load when requested to be played?
+* Convert wav files to mp3
 * More birds, more presets  

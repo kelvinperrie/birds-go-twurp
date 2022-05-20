@@ -32,6 +32,7 @@ header {
   cursor: pointer;
   font-family: 'Gloria Hallelujah', cursive;
   user-select: none;
+  position: relative;
 }
 .sound-name-container {
   height: 40px;
@@ -42,9 +43,19 @@ header {
 .sound-active {
   background-color:#a8ffa8;
 }
-.sound-not-ready {
+/* .sound-not-ready {
   background-color:#c4c4c4;
   cursor: default;
+} */
+
+.loading-indicator{
+  position:absolute;
+	left: 50%;
+	transform: translate(-50%, -50%);
+  top: 2em;
+}
+.loading-indicator img {
+  width: 50px;
 }
 
 .sound-container input {

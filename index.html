@@ -34,6 +34,7 @@
         <!-- ko foreach: soundControllers -->
         <h4 data-bind="text: category, visible: showCategory">????</h4>
         <div class="" data-bind="click: toggleActive, class: containerClasses">
+          <div class="loading-indicator" data-bind="visible: loading"><img src="images/loading-spinner.gif" alt="loading spinner"/></a></div>
           <div class="sound-name-container">
             <div class="sound-name" data-bind="text: label"></div>
           </div>
