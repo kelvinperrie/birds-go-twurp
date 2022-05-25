@@ -9,7 +9,7 @@ Page interaction is handled using knockout.js and sounds are played by howler.js
 
 continuous integration with master/dev branch: https://birdsoundsci.netlify.app/
 
-release branch is at: https://birdsounds.netlify.app/
+release branch is at: https://birdsounds.netlify.app/ aka https://birdsounds.nz
 
 To do:
 
