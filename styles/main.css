@@ -62,15 +62,44 @@ header {
   margin-top: 1em;
 }
 
-.github-link{
+.external-links-container {
   padding: 2px;
   position: fixed;
   right: 2px;
   bottom: 2px;
 }
 
+.license-info-trigger {
+  position: absolute;
+  right: 5px;
+  top: -2px;
+  display: none;
+}
+.sound-container:hover  .license-info-trigger {
+  display: block;
+}
+.attribution-info-container {
+  position: absolute;
+  display: none;
+  padding: 0.5em;
+  margin: -0.5em;
+  background-color: #fff;
+  border-radius: 20px;
+  width: 150px;
+  box-shadow: rgb(100 100 111 / 20%) 0px 7px 29px 0px;
+  z-index: 10;
+  font-size: 0.8em;
+}
+.license-info-trigger:hover .attribution-info-container {
+  display: block;
+}
+
 .btn {
   margin-bottom: 0.3rem;
+}
+
+hr {
+  margin-top: 2em;
 }
 
 /********** Range Input Styles **********/
