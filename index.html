@@ -43,16 +43,24 @@
           </div>
           <!-- active: <span data-bind="text: active">???</span><br/> -->
           <input type="range" min="1" max="100" value="50" data-bind="click: function() {}, clickBubble: false, value: selectedVolume, valueUpdate: 'input'">
+          <div class="license-info-trigger" data-bind="">©
+            <!-- ko with: attribution -->
+            <div class="attribution-info-container">
+              This <a target="_blank" href="" data-bind="attr : { href : link },click: function() { return true;}, clickBubble: false">sound</a> by <span data-bind="text: name"></span> <a target="_blank" href="" data-bind="attr : { href : licenseUrl },click: function() { return true;}, clickBubble: false">some rights reserved</a>
+            </div>
+            <!-- /ko -->
+          </div>
         </div>
         <!-- /ko -->
       </div>
+      <hr>
       <div>
         <h4>Attributions</h4>
         All sounds may have been modified to change volume levels, remove unwanted noises, and trim to the wanted lengths.
         <!-- ko foreach: soundControllers -->
         <!-- ko with: attribution -->
         <div class="attribution">
-          <a href="" data-bind="attr : { href : link }, text: $parent.label">???</a> © <span data-bind="text: name">???</span> · <a href="" data-bind="attr : { href : licenseUrl }">some rights reserved</a>
+          <a target="_blank" href="" data-bind="attr : { href : link }, text: $parent.label">???</a> © <span data-bind="text: name">???</span> · <a target="_blank" href="" data-bind="attr : { href : licenseUrl }">some rights reserved</a>
         </div>
         <!-- /ko -->
         <!-- /ko -->
