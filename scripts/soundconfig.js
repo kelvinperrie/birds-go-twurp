@@ -20,6 +20,16 @@ var soundsConfiguration = [
         }
     },
     {
+        "file" : "sounds/Korimako Bell Bird - tony_wills - by - 7842789.mp3",
+        "label" : "Korimako / Bell Bird",
+        "initialVolume" : 0.6,
+        "attribution" : {
+            "name" : "Tony Wills",
+            "link" : "https://inaturalist.nz/observations/7842789",
+            "licenseUrl" : "https://creativecommons.org/licenses/by/4.0/"
+        }
+    },
+    {
         "file" : "sounds/Pukeko - Dave Holland-altered.mp3",
         "label" : "Pukeko",
         "initialVolume" : 0.5,
@@ -266,6 +276,16 @@ var soundsConfiguration = [
         "attribution" : {
             "name" : "Spencer McIntyre",
             "link" : "https://inaturalist.nz/observations/40831936",
+            "licenseUrl" : "https://creativecommons.org/licenses/by/4.0/"
+        }
+    },
+    {
+        "file" : "sounds/Kaka - tony_wills - by - 99595303.mp3",
+        "label" : "Kaka",
+        "initialVolume" : 0.6,
+        "attribution" : {
+            "name" : "Tony Wills",
+            "link" : "https://inaturalist.nz/observations/99595303",
             "licenseUrl" : "https://creativecommons.org/licenses/by/4.0/"
         }
     },
