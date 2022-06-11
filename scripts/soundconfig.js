@@ -120,6 +120,26 @@ var soundsConfiguration = [
         }
     },
     {
+        "file" : "sounds/Brown Kiwi - Lidsay Alexander - httpsmacaulaylibrary.org-asset-175323911.mp3",
+        "label" : "NI Brown Kiwi (male + female)",
+        "initialVolume" : 0.5,
+        "attribution" : {
+            "name" : "Lindsay Alexander",
+            "link" : "https://macaulaylibrary.org/asset/175323911",
+            "licenseUrl" : "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+    },
+    {
+        "file" : "sounds/Little Spotted Kiwi - tony_wills - by - 560897.mp3",
+        "label" : "Little Spotted Kiwi",
+        "initialVolume" : 0.6,
+        "attribution" : {
+            "name" : "Tony Wills",
+            "link" : "https://inaturalist.nz/observations/560897",
+            "licenseUrl" : "https://creativecommons.org/licenses/by/4.0/"
+        }
+    },
+    {
         "file" : "sounds/Ruru - 102334719 - linds-nz.mp3",
         "label" : "Ruru squawk",
         "initialVolume" : 0.5,
@@ -250,6 +270,16 @@ var soundsConfiguration = [
         }
     },
     {
+        "file" : "sounds/Song Thrush - tony_wills - by - 99290915.mp3",
+        "label" : "Song Thrush",
+        "initialVolume" : 0.5,
+        "attribution" : {
+            "name" : "Tony Wills",
+            "link" : "https://inaturalist.nz/observations/99290915",
+            "licenseUrl" : "https://creativecommons.org/licenses/by/4.0/"
+        }
+    },
+    {
         "file" : "sounds/Black Cicada - Dave Holland-altered.mp3",
         "label" : "Black Cicada",
         "initialVolume" : 0.5,
@@ -269,6 +299,17 @@ var soundsConfiguration = [
             "name" : "Andrew Nevin",
             "link" : "https://inaturalist.nz/observations/41589459",
             "licenseUrl" : "https://creativecommons.org/licenses/by-nc/4.0/"
+        }
+    },
+    {
+        "file" : "sounds/Possum - tony_wills - by - 560941.mp3",
+        "label" : "Possum",
+        "initialVolume" : 0.7,
+        "category" : "Ambient",
+        "attribution" : {
+            "name" : "Tony Wills",
+            "link" : "https://inaturalist.nz/observations/560941",
+            "licenseUrl" : "https://creativecommons.org/licenses/by/4.0/"
         }
     },
     {
