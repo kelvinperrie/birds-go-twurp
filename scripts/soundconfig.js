@@ -20,6 +20,16 @@ var soundsConfiguration = [
         }
     },
     {
+        "file" : "sounds/Korimako Bell Bird - tony_wills - by - 7842789.mp3",
+        "label" : "Korimako / Bellbird",
+        "initialVolume" : 0.6,
+        "attribution" : {
+            "name" : "Tony Wills",
+            "link" : "https://inaturalist.nz/observations/7842789",
+            "licenseUrl" : "https://creativecommons.org/licenses/by/4.0/"
+        }
+    },
+    {
         "file" : "sounds/Pukeko - Dave Holland-altered.mp3",
         "label" : "Pukeko",
         "initialVolume" : 0.5,
@@ -169,16 +179,16 @@ var soundsConfiguration = [
             "licenseUrl" : "https://creativecommons.org/licenses/by-nc/4.0/"
         }
     },
-    {
-        "file" : "sounds/Bellbird - 108909011 - ofo16-altered.mp3",
-        "label" : "Korimako / Bellbird",
-        "initialVolume" : 0.5,
-        "attribution" : {
-            "name" : "ofo16",
-            "link" : "https://inaturalist.nz/observations/108909011",
-            "licenseUrl" : "https://creativecommons.org/licenses/by-nc/4.0/"
-        }
-    },
+    // {
+    //     "file" : "sounds/Bellbird - 108909011 - ofo16-altered.mp3",
+    //     "label" : "Korimako / Bellbird",
+    //     "initialVolume" : 0.5,
+    //     "attribution" : {
+    //         "name" : "ofo16",
+    //         "link" : "https://inaturalist.nz/observations/108909011",
+    //         "licenseUrl" : "https://creativecommons.org/licenses/by-nc/4.0/"
+    //     }
+    // },
     {
         "file" : "sounds/Tomtit - 95739488 - elixzabeth-altered.mp3",
         "label" : "Ngirungiru / Tomtit",
@@ -266,6 +276,16 @@ var soundsConfiguration = [
         "attribution" : {
             "name" : "Spencer McIntyre",
             "link" : "https://inaturalist.nz/observations/40831936",
+            "licenseUrl" : "https://creativecommons.org/licenses/by/4.0/"
+        }
+    },
+    {
+        "file" : "sounds/Kaka - tony_wills - by - 99595303.mp3",
+        "label" : "Kaka",
+        "initialVolume" : 0.6,
+        "attribution" : {
+            "name" : "Tony Wills",
+            "link" : "https://inaturalist.nz/observations/99595303",
             "licenseUrl" : "https://creativecommons.org/licenses/by/4.0/"
         }
     },
