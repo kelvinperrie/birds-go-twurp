@@ -21,7 +21,7 @@ var soundsConfiguration = [
     },
     {
         "file" : "sounds/Korimako Bell Bird - tony_wills - by - 7842789.mp3",
-        "label" : "Korimako / Bell Bird",
+        "label" : "Korimako / Bellbird",
         "initialVolume" : 0.6,
         "attribution" : {
             "name" : "Tony Wills",
@@ -179,16 +179,16 @@ var soundsConfiguration = [
             "licenseUrl" : "https://creativecommons.org/licenses/by-nc/4.0/"
         }
     },
-    {
-        "file" : "sounds/Bellbird - 108909011 - ofo16-altered.mp3",
-        "label" : "Korimako / Bellbird",
-        "initialVolume" : 0.5,
-        "attribution" : {
-            "name" : "ofo16",
-            "link" : "https://inaturalist.nz/observations/108909011",
-            "licenseUrl" : "https://creativecommons.org/licenses/by-nc/4.0/"
-        }
-    },
+    // {
+    //     "file" : "sounds/Bellbird - 108909011 - ofo16-altered.mp3",
+    //     "label" : "Korimako / Bellbird",
+    //     "initialVolume" : 0.5,
+    //     "attribution" : {
+    //         "name" : "ofo16",
+    //         "link" : "https://inaturalist.nz/observations/108909011",
+    //         "licenseUrl" : "https://creativecommons.org/licenses/by-nc/4.0/"
+    //     }
+    // },
     {
         "file" : "sounds/Tomtit - 95739488 - elixzabeth-altered.mp3",
         "label" : "Ngirungiru / Tomtit",
