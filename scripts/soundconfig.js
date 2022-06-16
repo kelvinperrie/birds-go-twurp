@@ -4,7 +4,7 @@ var soundsConfiguration = [
         "label" : "Riroriro / Grey Warbler",
         "initialVolume" : 0.5,
         "attribution" : {
-            "name" : "Dave",
+            "name" : "Dave Holland",
             "link" : "https://inaturalist.nz/observations/64151151",
             "licenseUrl" : "https://creativecommons.org/licenses/by-nc/4.0/"
         }
@@ -34,7 +34,7 @@ var soundsConfiguration = [
         "label" : "Pukeko",
         "initialVolume" : 0.5,
         "attribution" : {
-            "name" : "Dave",
+            "name" : "Dave Holland",
             "link" : "https://inaturalist.nz/observations/55358453",
             "licenseUrl" : "https://creativecommons.org/licenses/by-nc/4.0/"
         }
@@ -44,7 +44,7 @@ var soundsConfiguration = [
         "label" : "Tieke / Saddleback",
         "initialVolume" : 0.5,
         "attribution" : {
-            "name" : "Dave",
+            "name" : "Dave Holland",
             "link" : "https://inaturalist.nz/observations/55358418",
             "licenseUrl" : "https://creativecommons.org/licenses/by-nc/4.0/"
         }
@@ -305,7 +305,7 @@ var soundsConfiguration = [
         "initialVolume" : 0.5,
         "category" : "Ambient",
         "attribution" : {
-            "name" : "Dave",
+            "name" : "Dave Holland",
             "link" : "https://inaturalist.nz/observations/69754050",
             "licenseUrl" : "https://creativecommons.org/licenses/by-nc/4.0/"
         }
