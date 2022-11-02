@@ -79,6 +79,16 @@ var presetsConfiguration = [
         ]
     },
     {
+        "title" : "Checking the trap line",
+        "active" : true,
+        "sounds" : [
+            { "label" : "Tui", "volume" : 0.3 },
+            { "label" : "Riroriro / Grey Warbler", "volume" : 0.75 },
+            { "label" : "Ngirungiru / Tomtit", "volume" : 0.7 },
+            { "label" : "Wind in trees", "volume" : 0.025 }
+        ]
+    },
+    {
         "title" : "Chips at the Beach",
         "active" : true,
         "sounds" : [
