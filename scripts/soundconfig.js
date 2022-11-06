@@ -170,25 +170,15 @@ var soundsConfiguration = [
         }
     },
     {
-        "file" : "sounds/NI Robin - 102787158 - flowertea.mp3",
+        "file" : "sounds/Tautauwai - Kelvin Perrie - by - 141237424.mp3",
         "label" : "Tautauwai / N.I. Robin",
         "initialVolume" : 0.5,
         "attribution" : {
-            "name" : "flowertea",
-            "link" : "https://inaturalist.nz/observations/102787158",
-            "licenseUrl" : "https://creativecommons.org/licenses/by-nc/4.0/"
+            "name" : "Kelvin Perrie",
+            "link" : "https://inaturalist.nz/observations/141237424",
+            "licenseUrl" : "https://creativecommons.org/licenses/by/4.0/"
         }
     },
-    // {
-    //     "file" : "sounds/Bellbird - 108909011 - ofo16-altered.mp3",
-    //     "label" : "Korimako / Bellbird",
-    //     "initialVolume" : 0.5,
-    //     "attribution" : {
-    //         "name" : "ofo16",
-    //         "link" : "https://inaturalist.nz/observations/108909011",
-    //         "licenseUrl" : "https://creativecommons.org/licenses/by-nc/4.0/"
-    //     }
-    // },
     {
         "file" : "sounds/Tomtit - 95739488 - elixzabeth-altered.mp3",
         "label" : "Ngirungiru / Tomtit",
